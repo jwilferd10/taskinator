@@ -314,12 +314,6 @@ var saveTasks = function() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// 1. Gets task items from localStorage.
-
-// 2. Converts tasks from the string format back into an array of objects.
-
-// 3. Iterates through a tasks array and creates task elements on the page from it.
-
 var loadTasks = function() {
     tasks = localStorage.getItem("tasks")
 
@@ -331,8 +325,6 @@ var loadTasks = function() {
     tasks = JSON.parse(tasks);
 
     for (var i = 0; i < tasks.length; i++) {
-        console.log(taskIdCounter); 
-        console.log(tasks[i])
         
         // Creating a new list
         var listItemEl = document.createElement("li");
@@ -355,8 +347,6 @@ var loadTasks = function() {
         var taskActionsEl = createTaskActions(tasks[i].id);
 
         listItemEl.appendChild(taskActionsEl);
-        
-        console.log(listItemEl);
 
         if (tasks[i].status === "to do") {
             listItemEl.querySelector("select[name='status-change']").selectedIndex = 0;
@@ -366,12 +356,11 @@ var loadTasks = function() {
             listItemEl.querySelector("select[name='status-change']").selectedIndex = 1;
             tasksInProgressEl.appendChild(listItemEl);
         }
-        else if (tasks[i].status === "complete") {
+        else if (tasks[i].status === "completed") {
             listItemEl.querySelector("select[name='status-change']").selectedIndex = 2;
             tasksCompletedEl.appendChild(listItemEl);
         }
         taskIdCounter++;
-        console.log(listItemEl)
     }
 };
 
