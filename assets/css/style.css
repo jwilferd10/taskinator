@@ -4,7 +4,7 @@
 
 :root {
   --primary: #44e9ff;
-  --secondary: #497980;
+  --secondary: #121c1c;
   --tertiary: rgb(192, 246, 253);
   --grey: #333;
   font-size: 62.5%;
@@ -121,6 +121,7 @@ footer {
   color: var(--secondary);
   font-size: 1.55rem;
 }
+
 .task-actions {
   display: flex;
   flex-wrap: wrap;

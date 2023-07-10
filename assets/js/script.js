@@ -255,9 +255,11 @@ const dragTaskHandler = function(event) {
     const getId = event.dataTransfer.getData("text/plain");
 };
 
+// Responsible for adding a CSS effect for taskListEl
 const dropZoneDragHandler = function(event) {
     const taskListEl = event.target.closest(".task-list");
 
+    // If true, add a style that highlights the closest taskListEl to indicate where the task can be dropped 
     if (taskListEl) {
         event.preventDefault();
         taskListEl.setAttribute("style", "background: rgba(68, 233, 255, 0.7); border-style: dashed;");
