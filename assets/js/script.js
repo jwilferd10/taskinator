@@ -364,16 +364,12 @@ var loadTasks = function() {
     }
 };
 
-loadTasks();
-
+// Event Listeners
 pageContentEl.addEventListener("change", taskStatusChangeHandler);
-
 pageContentEl.addEventListener("click", taskButtonHandler);
-
 pageContentEl.addEventListener("dragstart", dragTaskHandler);
-
 pageContentEl.addEventListener("dragover", dropZoneDragHandler);
-
 pageContentEl.addEventListener("drop", dropTaskHandler);
-
 pageContentEl.addEventListener("dragleave", dragLeaveHandler);
+
+loadTasks();
