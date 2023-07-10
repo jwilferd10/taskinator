@@ -68,6 +68,10 @@ footer {
   border-top: 5px solid var(--primary);
 }
 
+#gitHubLink {
+  text-decoration: none;
+}
+
 .page-title {
   color: var(--primary);
   margin-bottom: 5px;
