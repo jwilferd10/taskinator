@@ -139,10 +139,8 @@ const taskButtonHandler = function(event){
     if (targetEl.matches(".edit-btn")) {
         const taskId = targetEl.getAttribute("data-task-id");
         editTask(taskId);
-    }
-
-    // delete button was clicked 
-    if (event.target.matches(".delete-btn")) {
+    } else if (event.target.matches(".delete-btn")) {
+        // delete button was clicked 
         const taskId = event.target.getAttribute("data-task-id");
         deleteTask(taskId);
     }
@@ -161,9 +159,18 @@ const editTask = function(taskId) {
     console.log(taskName);
     console.log(taskType);
 
-    document.querySelector("#save-task").textContent = "Save Task";
+    // write the taskName and taskType values onto the form
+    document.querySelector("input[name='task-name']").value = taskName;
+    document.querySelector("select[name='task-type']").value = taskType
 
+    // set data attribute to the form with a value of the task's id so it knows which one is being edited
     formEl.setAttribute("data-task-id", taskId);
+
+    // update form button to notify user 
+    formEl.querySelector("#save-task").textContent = "Update Task";
+
+    // CHANGE COLOR OF THE BUTTON FOR FURTHER NOTIFICATION
+    formEl.querySelector("#save-task").style.backgroundColor = "green";
 };
 
 const completeEditTask = function(taskName, taskType, taskId) {
