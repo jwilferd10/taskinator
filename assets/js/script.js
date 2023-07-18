@@ -197,6 +197,8 @@ const completeEditTask = function(taskName, taskType, taskId) {
     formEl.removeAttribute("data-task-id");
     // reset button to initial state
     document.querySelector("#save-task").textContent = "Add Task";
+    // reset the color of the button
+    document.querySelector("#save-task").style.backgroundColor = 'var(--primary)';
 
     // save to localStorage
     saveTasks();
