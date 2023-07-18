@@ -7,6 +7,8 @@
   --secondary: #121c1c;
   --tertiary: rgb(192, 246, 253);
   --grey: #333;
+  --red: #ff445b;
+  --editing: #1abc9c;
   font-size: 62.5%;
 }
 

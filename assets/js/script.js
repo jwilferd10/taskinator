@@ -99,6 +99,7 @@ const createTaskActions = function(taskId) {
     editButtonEl.textContent = "Edit";
     editButtonEl.className = "btn edit-btn";
     editButtonEl.setAttribute("data-task-id", taskId);
+    editButtonEl.style.backgroundColor = "var(--editing)";
     actionContainerEl.appendChild(editButtonEl);
 
     // create delete button
@@ -106,6 +107,7 @@ const createTaskActions = function(taskId) {
     deleteButtonEl.textContent = "Delete";
     deleteButtonEl.className = "btn delete-btn";
     deleteButtonEl.setAttribute("data-task-id", taskId);
+    deleteButtonEl.style.backgroundColor = "var(--red)";
     actionContainerEl.appendChild(deleteButtonEl);
 
     // dropdown select element
@@ -170,7 +172,7 @@ const editTask = function(taskId) {
     formEl.querySelector("#save-task").textContent = "Update Task";
 
     // CHANGE COLOR OF THE BUTTON FOR FURTHER NOTIFICATION
-    formEl.querySelector("#save-task").style.backgroundColor = "green";
+    formEl.querySelector("#save-task").style.backgroundColor = "var(--editing)"
 };
 
 const completeEditTask = function(taskName, taskType, taskId) {
