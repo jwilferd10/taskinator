@@ -9,6 +9,7 @@
   --grey: #333;
   --red: #ff445b;
   --editing: #1abc9c;
+  --neon-pink: #ff00ff;
   font-size: 62.5%;
 }
 
@@ -67,7 +68,18 @@ footer {
   color: var(--tertiary);
   font-size: 2.4rem;
   padding: 20px;
-  border-top: 5px solid var(--primary);
+  position: relative;
+  border-top: 5px solid;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(to right, var(--neon-pink), var(--primary));
 }
 
 #gitHubLink {
