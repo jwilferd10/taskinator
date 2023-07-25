@@ -207,6 +207,14 @@ footer::before {
   color: #fff;
 }
 
+.edit-btn:active {
+  background-color: #0f7a65 !important;
+}
+
+.delete-btn:active {
+  background-color: #c22c3b !important;
+}
+
 .select-dropdown,
 .select-status {
   display: block;
