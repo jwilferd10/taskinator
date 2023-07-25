@@ -111,6 +111,10 @@ footer::before {
   width: 95%;
 }
 
+.hidden {
+  display: none;
+}
+
 .task-list-wrapper {
   flex: 1;
   margin: 0 20px 20px;

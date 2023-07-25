@@ -1,4 +1,5 @@
-// querySelector
+// querySelectors
+const editNotifyEl = document.querySelector("#taskEditNotify");
 const formEl = document.querySelector("#task-form");
 const tasksToDoEl = document.querySelector("#tasks-to-do");
 const pageContentEl = document.querySelector("#page-content");
@@ -173,6 +174,8 @@ const editTask = function(taskId) {
 
     // CHANGE COLOR OF THE BUTTON FOR FURTHER NOTIFICATION
     formEl.querySelector("#save-task").style.backgroundColor = "var(--editing)"
+
+    editNotifyEl.classList.remove('hidden');
 };
 
 const completeEditTask = function(taskName, taskType, taskId) {
@@ -201,6 +204,8 @@ const completeEditTask = function(taskName, taskType, taskId) {
     document.querySelector("#save-task").textContent = "Add Task";
     // reset the color of the button
     document.querySelector("#save-task").style.backgroundColor = 'var(--primary)';
+    // reapply the hidden class
+    editNotifyEl.classList.add('hidden');
 
     // save to localStorage
     saveTasks();
