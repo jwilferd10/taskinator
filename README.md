@@ -12,6 +12,7 @@
   - [User Story](#book-user-story)
   - [Resources Used](#floppy_disk-resources-used)
   - [Getting Started](#minidisc-getting-started)
+  - [Contributors](#paperclip-contributors)
   - [Contact Information](#e-mail-contact-information)
 
 ## :camera: Preview:
@@ -54,6 +55,9 @@ Big thanks to the UCLA Coding Bootcamp for their direction and thank YOU for che
 - Dropdown selection can switch tasks to different stages
 - Or drag and drop specific tasks to new stages.
 
+## :paperclip: Contributors
+- UCLA Coding Bootcamp (Setup of main project)
+- jwilferd10 (Design additions, mobile-setup, bug fixing) 
   
 ## :e-mail: Contact Information:
 - ### [jwilferd10](https://github.com/jwilferd10)
