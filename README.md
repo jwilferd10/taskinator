@@ -27,7 +27,20 @@ This application was the first time I worked with Web-APIs and was a part of my 
 Big thanks to the UCLA Coding Bootcamp for their direction and thank YOU for checking Taskinator out - I hope you enjoy it and happy coding!
 
 ## :book: User Story:
-Coming Soon!
+**AS A person looking to streamline my work**
+- I WANT a Kanban Board to track my projects progress
+- SO THAT I can work more efficiently
+
+**GIVEN I need a Kanban Board**
+- WHEN I open the app
+	- THEN I am presented with sections labelled To Do, In Progress, and Complete
+- WHEN I click Add Task
+	- THEN my task appears on the app
+- WHEN my task progresses
+	- THEN I can drag the task to the next stage
+  - OR change the stage using a dropdown menu
+- WHEN the task is no longer needed
+	- THEN I can delete the single task
   
 ## :floppy_disk: Resources Used:
 - HTML
@@ -35,7 +48,11 @@ Coming Soon!
 - JavaScript
 
 ## :minidisc: Getting Started:
-Coming Soon!
+- Enter & select the type of task
+- Click the 'Edit' button to open the Edit Form
+- Delete button to remove a single task
+- Dropdown selection can switch tasks to different stages
+- Or drag and drop specific tasks to new stages.
 
   
 ## :e-mail: Contact Information:
