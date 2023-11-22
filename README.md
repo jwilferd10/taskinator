@@ -16,7 +16,10 @@
   - [Contact Information](#e-mail-contact-information)
 
 ## :camera: Preview:
-Coming Soon!
+![image](assets/images/TaskinatorStill.jpg)
+
+## :movie_camera: Demo:
+![image](assets/images/TaskinatorGIF.gif)
 
 ## :wave: Description: 
 Whether you need to manage daily routines, plan projects, or keep track of personal goals, Taskinator is here to simplify the process and boost productivity!
